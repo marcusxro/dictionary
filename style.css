@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0C0C0C;
+    font-family: 'DM Sans', sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    height: 50px;
+    background-color: #0C0C0C;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999999999;
+}
+.anchs {
+    display: flex;
+    gap: 15px;
+}
+.main {
+    height: auto;
+    background-color: #0C0C0C;
+}
+.home a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    font-weight: 900px;
+    font-size: 20px;
+}
+
+.logo::after{
+    content: "free dictionary";
+    font-size: 8px;
+}
+form {
+    width: 100%;
+}
+.right {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+.search {
+    width: 100%;
+
+}
+.port a {
+    text-decoration: none;
+    color: white;
+}
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 30px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.title {
+    color: white;
+}
+
+
+.wrapper {
+width: 100%;
+max-width: 800px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.top-content {
+    height: 40vh; 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 40px;
+}
+.word {
+    font-size:clamp(3rem, 8vw, 8rem);
+    color: white;
+    text-align: center;
+}
+
+.playsound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    outline: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    gap: 5px;
+    transition: 0.5s ease-in-out;
+}
+.play, .sound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+
+.bottom-sec {
+    color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+    border-top: 1px solid gray;
+    border-radius: 20px;
+}
+body {  
+    overflow: visible;
+}
+.menu-con {
+    display: none;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.lines{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+}
+.partofspeech {
+    color: white;
+    width: 10vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.partofspeechs {
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    width: auto;
+    height: auto;
+}
+
+
+.example {
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start; 
+}
+
+.definition {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-self: flex-start; 
+}
+
+.example li {
+    list-style-type: none;  
+    height: auto;
+    padding: 10px;
+    border: 1px solid gray;
+    padding-inline: 10px;
+    font-size: 2rem;
+}
+
+
+.definition li {
+    list-style-type: none;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    border: 1px solid gray;
+    font-size:     clamp(1.5rem, 3vw, 8rem);
+    padding: 10px;
+}
+.defitions {
+    text-align: left;
+    width: 100%;
+}
+.definition-title {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    font-size:     clamp(2rem, 5vw, 8rem);
+    flex-direction: column;
+    gap: 0;
+}
+.example-title {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    font-size:     clamp(1.5rem, 5vw, 8rem);
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+}
+.link-con {
+  display: flex;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 1000px) {
+    .right {
+        display: none;
+    }
+    .menu-con {
+        display: block;
+      }
+}
+
+@media only screen and (max-width: 730px) {
+
+    .defitions {
+        text-align: center;
+    }
+    .link-con {
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+  .bottom-sec {
+    flex-direction: column;
+  }
+  .partofspeech {
+    height: auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+  .example {
+    width: 100%;
+  }
+  .top-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .definitions{
+align-items: center;
+justify-content: center;
+  }
+  .link {
+    width: 100%;
+  }
+  .definition-title {
+    display: flex;
+    justify-content: center;
+    border-radius: 1px solid gray;
+    width: 100%;
+    align-items: center;
+  }
+  .example-title {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    border-radius: 1px solid gray;
+  }
+}
+
+.close-words {
+    color: white;
+    width: 100%;
+}
+.close-words li {
+    border: 1px solid gray;
+    width: 100%;
+    word-wrap: break-word;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    font-size: 1rem;
+    display: flex;
+    align-self: flex-start;
+    padding-inline: 8px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+.link:hover {
+    background-color: wheat;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.playsound:hover {
+    background-color: wheat;
+    border: none;
+    outline: none;
+    color: black;
+}
+.close-words ul {
+    width: auto;
+
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 730px) {
+    .close-words  {
+        width: 100%;
+    }
+    .close-words li{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .first {
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .close-words li{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .close-words li{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+    }
+
+}
